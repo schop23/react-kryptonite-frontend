@@ -5,19 +5,19 @@ class Post extends Component {
   
     return (
       <div>
-        <form class='input-box' onSubmit={this.props.handlePostSubmit}>
+        <form className='input-box' onSubmit={this.props.handlePostSubmit}>
 
-          <input class='title' type='text' name='title' placeholder='Comic Book Title' onChange={this.props.handlePostInput} />
+          <input className='title' type='text' name='title' placeholder='Comic Book Title' onChange={this.props.handlePostInput} />
 
-          <input class='publisher' type='text' name='publisher' placeholder='Publisher' onChange={this.props.handlePostInput} />
+          <input className='publisher' type='text' name='publisher' placeholder='Publisher' onChange={this.props.handlePostInput} />
 
-          <input class='issue' type='number' name='issue' placeholder='Issue Number' onChange={this.props.handlePostInput} />
+          <input className='issue' type='number' name='issue' placeholder='Issue Number' onChange={this.props.handlePostInput} />
 
-          <input class='url' type='text' name='url' placeholder='Buy Digital Comic Book' onChange={this.props.handlePostInput} />
+          <input className='url' type='text' name='url' placeholder='Buy Digital Comic Book' onChange={this.props.handlePostInput} />
 
-          <textarea class='review' type='text' name='review' placeholder='Write Review Here' onChange={this.props.handlePostInput} />
+          <textarea className='review' type='text' name='review' placeholder='Write Review Here' onChange={this.props.handlePostInput} />
 
-          <input class='post-button' type='submit' value='Post' />
+          <input className='post-button' type='submit' value='Post' />
 
         </form>
       </div>
