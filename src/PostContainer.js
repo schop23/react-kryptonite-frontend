@@ -5,7 +5,7 @@ class PostContainer extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      comics: '',
+      comics: [],
       newComic: {
         title: '',
         publisher: '',
@@ -21,6 +21,13 @@ class PostContainer extends Component {
 
   componentDidUpdate () {
     console.log(this.state)
+  }
+
+  componentDidMount () {
+    axios.get('http://localhost:3002/')
+    .then(results => { console.log(results)
+      this.setState({comics: results.data})
+    })
   }
 
   handlePostInput (e) {
@@ -40,10 +47,11 @@ class PostContainer extends Component {
   }
 
   render () {
-    return <Post
+    console.log(this.state.comics)
+    return (<Post
       handlePostInput={this.handlePostInput}
       handlePostSubmit={this.handlePostSubmit}
-    />
+    />)
   }
 }
 
