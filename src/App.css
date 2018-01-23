@@ -1,8 +1,48 @@
-.App {
+.header {
   text-align: center;
+  background-image: url('DC-Rebirth-Cover.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: lawngreen
 }
 
-.App-logo {
+.input-box {
+  font-size: 15px;
+  width: 250px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  margin-bottom: 15px;
+}
+
+.publisher {
+  margin-bottom: 15px;
+}
+
+.issue {
+  margin-bottom: 15px;
+}
+
+.url {
+  margin-bottom: 15px;
+}
+
+.review {
+  margin-bottom: 15px;
+}
+
+.post-button {
+  background-color: lawngreen;
+  font-size: 15px;
+  border-radius: 6px;
+  width: 95px;
+}
+
+/*.App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
@@ -26,3 +66,4 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+*/
